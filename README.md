@@ -8,7 +8,9 @@ The conversion from the observed pixel gray value to a column of printed materia
 The methodology used in this software is similar to that introduced by Caldwell and Yaffe in 1990 (https://doi.org/10.1118/1.596506).
 
 
-[[https://github.com/DIDSR/mammoreplicator/blob/master/figures/inkjet_phantom_LowDens_Acquisition.png]]
+
+![Example breast phantom created with mammoreplicator.](https://github.com/DIDSR/mammoreplicator/blob/master/figures/inkjet_phantom_LowDens_Acquisition.png)
+
 
 
 ## Disclaimer

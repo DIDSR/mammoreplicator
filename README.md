@@ -7,9 +7,9 @@ Each pixel in the input image is transformed into a column of material tilted to
 The conversion from the observed pixel gray value to a column of printed material with equivalent attenuation requires certain assumptions and knowledge of multiple imaging system parameters, such as x-ray energy spectrum, source-to-object distance, compressed breast thickness, and average breast material attenuation.
 The methodology used in this software is similar to that introduced by Caldwell and Yaffe in 1990 (https://doi.org/10.1118/1.596506).
 
-[Example figure](figures/inkjet_phantom_LowDens_Acquisition.png)
 
-https://github.com/DIDSR/mammoreplicator/blob/master/figures/inkjet_phantom_LowDens_Acquisition.png
+[[https://github.com/DIDSR/mammoreplicator/blob/master/figures/inkjet_phantom_LowDens_Acquisition.png]]
+
 
 ## Disclaimer
 

@@ -1,7 +1,11 @@
 # mammoreplicator
-This repository contains the source code of the _mammoreplicator_ software described in the article: Andreu Badal, Matthew Clark, Bahaa Ghammraoui, "Reproducing two-dimensional mammograms with three-dimensional printed phantoms", Journal of Medical Imaging 5, p. 033501 (2018). The software was initially introduced at the SPIE Medical Imaging 2016 conference.
+This repository contains the source code of the _mammoreplicator_ software described in the article: __Andreu Badal, Matthew Clark, Bahaa Ghammraoui, "Reproducing two-dimensional mammograms with three-dimensional printed phantoms", Journal of Medical Imaging 5, p. 033501 (2018)__. The software was initially introduced at the SPIE Medical Imaging 2016 conference.
 
-The code reads dicom images (using the http://www.pydicom.org/ library) and outputs a triangle mesh file in PLY format. Sample dicom mammography images can be downloaded at http://deckard.mc.duke.edu/~samei/tg18_files/TG18-MM-dcm.zip
+The _mammoreplicator_ software implements a simple, easily reproducible methodology to create 3D phantoms that replicate the attenuation profile observed in real 2D mammograms.
+The software processes an input raw mammography image to estimate the amount of x-ray attenuation at each pixel, and outputs a triangle mesh object that encodes the observed attenuation map.
+Each pixel in the input image is transformed into a column of material tilted towards the direction of the x-ray focal spot, so that the projection of the column covers exactly the area of the original pixel.
+The conversion from the observed pixel gray value to a column of printed material with equivalent attenuation requires certain assumptions and knowledge of multiple imaging system parameters, such as x-ray energy spectrum, source-to-object distance, compressed breast thickness, and average breast material attenuation.
+The methodology used in this software is similar to that introduced by Caldwell and Yaffe in 1990 (https://doi.org/10.1118/1.596506).
 
 
 
